@@ -18,7 +18,7 @@ elif desired_parent_path == 'Change' :
       parent_folder_path = different_parent_path
 
 else :
-	print("bruh")
+	print("Bye")
 
 def add_tag() :
 	add_tag_name = input("Enter the name of the tag: ")
@@ -81,11 +81,11 @@ def add_tag() :
       			print(read_file("add_tag_files_name"))  
 
       		else:
-      			print("bruh")
+      			print("Bye")
 
       		save_simulated_folder() 
       	else:
-      		print("bruh")
+      		print("Bye")
       		break
 
 def save_file() :
@@ -117,7 +117,7 @@ def save_file() :
 		except FileNotFoundError:
 			print(f"'{f_quest_folder}' '{ErrorMsg2}'.")
 	else :
-		print("bruh")
+		print("Bye")
 
 def save_name() :
 	p_name = (input("Enter the name of the folder: "))
@@ -137,7 +137,7 @@ def save_name() :
 			print("bruh")
 			break
 		else :
-			print("bruh")
+			print("Bye")
 
 def delete_name() :
 	d_name_view_quest = input("Would you like to view the folders in the directory: ")
@@ -222,10 +222,10 @@ def delete_file() :
 					print(f"'{f_d_name}' '{ErrorMsg2}'")
 
 			elif command_delete_file.lower() == 'no' :
-				print("bruh")
+				print("Bye")
 				break
 			else :
-				print("bruh")
+				print("Bye")
 
 	else :
 		try :
@@ -262,10 +262,10 @@ def delete_file() :
 					print(f"'{f_d_name}' '{ErrorMsg2}'")
 
 			elif command_delete_file.lower() == 'no' :
-				print("bruh")
+				print("Bye")
 				break
 			else :
-				print("bruh")
+				print("Bye")
 
 def view_names() :
 	files = os.listdir(parent_folder_path)
@@ -417,4 +417,4 @@ elif function == 'Import File' :
 	import_file()
 
 else :
-	print("bruh")
+	print("Invalid")
